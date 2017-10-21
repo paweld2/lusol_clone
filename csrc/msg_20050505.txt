@@ -1,0 +1,17 @@
+From: Kjell Eikland <keikland@broadpark.no>
+To: 'Michael A Saunders' <saunders@stanford.edu>
+Subject: [POSSIBLE VIRUS:###] LUSOL_C_20050505.ZIP
+Date-Sent: Wednesday, May 11, 2005 04:20:32 AM
+
+
+Dear Michael,
+
+Please find enclosed the current version of LUSOL-C that has the row-based
+L0 feature.  There are also a couple of changes that boost the speed of some
+trivial operations a little (abt 2%).  For your information, I have now used
+the rank-revealing feature in LUSOL to eliminated linearly dependent
+constraints in lp_solve, and this will be part of v5.5 that will be out as
+Alpha shortly.  Thanks for your help.
+
+Regards
+Kjell

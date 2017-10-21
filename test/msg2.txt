@@ -1,0 +1,24 @@
+Date: Sat, 31 Jan 2004 21:38:08 -0600
+From: tao-gang@utulsa.edu
+To: saunders@stanford.edu
+Subject: Re: Tao Gang in Univ. of Tulsa
+Parts/Attachments:
+   1 Shown        12 lines  Text
+   2   OK      6,805 lines  Text
+   3   OK     52,660 lines  Text
+   4   OK     10,009 lines  Text
+   5   OK     44,590 lines  Text
+----------------------------------------
+
+Dr: Sauders
+
+Tha attached is my matrix, I tested using different factol and luparm(6), it
+still says large Rnorm.
+
+I send you my matrix of 6805 and 10009. and tested rhs assuming x(i) = 1.0
+so that I can easy
+see the result.
+
+taogang
+
+1.31.04

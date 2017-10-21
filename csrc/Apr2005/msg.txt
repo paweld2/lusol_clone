@@ -1,0 +1,51 @@
+From: Kjell Eikland <keikland@broadpark.no>
+To: saunders@stanford.edu
+Subject: Row-based L0 in LUSOL
+Date-Sent: Sunday, April 24, 2005 02:15:28 PM
+
+Dear Michael, 
+
+Long time no speak.  I hope you are well - even in these
+times of finals.  We are planning another trip to the US /
+East Coast again this summer (early July), and my wife just
+asked if I wanted to stop by GAMS and see you... which would
+have been nice, but a repeat of the utter coincidence last
+year I guess would be too much to expect.
+
+I have noticed that you have been "online" with lp_solve
+occasionally, something I have appreciated a lot.  I hope
+you have seen the frequency with which Peter and I are
+telling people to use bfp_LUSOL whenever they have problems
+-- and then the users' problems seem to disappear.
+
+There will be a new version of lp_solve coming out any day
+now, and it has taken quite a bit of effort.  LUSOL has just
+been sitting there, with only very cosmetic changes and it
+has been the incarnation of robustness.  However, as you may
+remember, I toyed with the idea of creating a row-based L0
+in order to speed up the "btran" solution with sparse
+vectors and this has now come up again as something I would
+like to see part of the next version.  I really hit the wall
+trying to penetrate the coding logic last year, and I just
+did not have the mental space and time to crack it.
+However, this week-end I spent a few hours on it and I seem
+to have solved it, at least partially.  This is where I hope
+you can offer some advice.
+
+Basically, the code works beautifully with extremely high
+accuracy for a wide range of test matrices, but some do
+return with poor accuracy and I have not found the location
+of the problem.  In all cases poor accuracy is returned
+following a column update, which I surmise could be due to
+permutations to maintain sparsity, but I am not sure.
+
+Does this ring a bell for you?  I have enclosed the code
+hoping that you might be able to suggest where there could
+be problems.  I send the whole pack to you so you have it,
+but the key new code is in the new file "lusol6l0.c", which
+contains two routines used in lusol1a following
+factorization to create a row-based L0, and lusol6a for
+solving the L0-part of btran.
+
+Regards 
+Kjell

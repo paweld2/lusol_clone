@@ -1,0 +1,10 @@
+cat \
+../src/27HEAD.f  \
+../src/lusol1.f  \
+../src/lusol2.f  \
+../src/lusol6a.f \
+../src/lusol7a.f \
+../src/lusol8a.f \
+ > mi27lu.f
+
+ls -lFh    --color=auto --time-style=locale mi27lu.f

@@ -1,0 +1,19 @@
+From: Yin Zhang <yzhang@cs.utexas.edu>
+To: "Michael A. Saunders" <saunders@stanford.edu>,
+    Kjell Eikland <keikland@broadpark.no>
+cc: Yin Zhang <yzhang@cs.utexas.edu>
+Subject: C-mex wrapper for LUSOL
+Date-Sent: Thursday, December 01, 2005 07:29:17 PM
+
+Hi Michael & Kjell,
+
+I've attached the tarball of my C-mex wrapper for LUSOL.  See
+MATLAB_README.txt for more details.  You need to compile the C program with
+-DMATLAB and -DYZHANG options (see Makefile).  -DMATLAB turns on matlab
+memory management routines like mxMalloc etc., -DYZHANG turns on fixes to
+various problems I found in the original LUSOL source code.  You can just
+use 'grep MATLAB' and 'grep YZHANG' to find all the changes I made.  Please
+let me know if you find any problems.  Also please feel free to incorporate
+the code in your open source distribution.
+
+-- Yin

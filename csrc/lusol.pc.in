@@ -7,5 +7,5 @@ Name: lusol
 Version: 2.2.1.0
 Description: LUSOL v2.2.1.0
 Requires:
-Libs: -L${libdir}
+Libs: -L${libdir} -llusol
 Cflags: -I${includedir} 

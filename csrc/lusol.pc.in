@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_LIBDIR@
+includedir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_INCLUDEDIR@/lusol
+
+Name: lusol
+Version: 2.2.1.0
+Description: LUSOL v2.2.1.0
+Requires:
+Libs: -L${libdir}
+Cflags: -I${includedir} 

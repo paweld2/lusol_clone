@@ -12,6 +12,16 @@
 #include "lusolio.h"
 #include "lusolmain.h"
 
+
+void _strUpperCase(char *string)
+{
+  char *s = string;
+  while (*s) {
+    *s = toupper((unsigned char) *s);
+    s++;
+  }
+}
+
 MYBOOL getFileName(char *filename, char *test)
 {
   MYBOOL status;
@@ -157,7 +167,7 @@ void main( int argc, char *argv[], char *envp[] )
 
 /* Obtain file extension and see if we must estimate matrix data size */
   strcpy(fileext, strchr(argv[useropt], '.'));
-  _strupr(fileext);
+  _strUpperCase(fileext);
 
   /* Read conventional text file format */
   if(strcmp(fileext, ".TXT") == 0) {
@@ -257,7 +267,7 @@ void main( int argc, char *argv[], char *envp[] )
     if(i != 0) 
       useropt++;
     strcpy(fileext, strchr(argv[useropt], '.'));
-    _strupr(fileext);
+    _strUpperCase(fileext);
 
     /* Read conventional text file format */
     if(strcmp(fileext, ".TXT") == 0) {

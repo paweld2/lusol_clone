@@ -43,8 +43,8 @@ MYBOOL ctf_read_A(char *filename, int maxm, int maxn, int maxnz,
       jA[k]  = j;
       Aij[k] = Ak;
     }
-    *m      = max( *m, i );
-    *n      = max( *n, j );
+    *m      = MAX( *m, i );
+    *n      = MAX( *n, j );
   }
   fclose( iofile );
   if(!eof) {
